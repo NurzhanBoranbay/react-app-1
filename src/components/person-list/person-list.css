@@ -1,0 +1,42 @@
+
+.list {
+   margin-top: 20px;
+}
+
+.person {
+   margin-top: 10px;
+   display: flex;
+   gap: 50px
+}
+.person span {
+   /*text-decoration: underline;*/
+   border-bottom: 1px solid;
+   color: #fff;
+   font-size: 18px;
+}
+
+.info {
+   display: flex;
+   gap: 50px;
+   align-items: center;
+}
+
+.info .info-1,
+.info .info-2 {
+   display: block;
+   width: 170px;
+   /*align-self: flex-start;*/
+}
+
+.info .info-1 span,
+.info .info-2 span {
+   border-bottom: 1px solid;
+} 
+
+.info button {
+   padding: 5px 10px;
+   background-color: bisque;
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;
+}

@@ -1,0 +1,33 @@
+
+.add-person {
+   margin-top: 40px;
+   padding-bottom: 30px;
+}
+
+.add-person h3 {
+   color: rgb(166, 169, 175);
+   margin-bottom: 20px;
+}
+
+.item {
+   display: flex;
+   gap: 20px;
+}
+
+.item input,
+.item button {
+   outline: none;
+   padding: 10px;
+}
+
+.item input {
+   width: 150px;
+}
+
+.input-number {
+   max-width: 70px;
+}
+
+.item button {
+   cursor: pointer;
+}
