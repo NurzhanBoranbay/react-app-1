@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 
 import './add-person.css'
 
@@ -32,7 +32,15 @@ class AddPerson extends Component {
    render() {
       return (
          <div className="add-person">
-            <h3>Добавить человек</h3>
+
+            {/*{this.props.children}*/}
+
+            {
+               React.Children.map(this.props.children, child => {
+                  return React.cloneElement(child, {style: {color: 'yellow'}})
+               })
+            }
+
             <div className="item">
             <input 
                type="text" 

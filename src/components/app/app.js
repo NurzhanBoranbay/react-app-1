@@ -12,7 +12,6 @@ class App extends Component {
          persons: [
             {name: 'Азамат', surname: 'Аймахан', id: 1, year: 1997},
             {name: 'Нуржан', surname: 'Боранбай', id: 2, year: 1997},
-            {name: 'Бекжан', surname: 'Боранбай', id: 3, year: 1997},
          ],
          term: ''
       }
@@ -72,10 +71,11 @@ class App extends Component {
    
             <PersonList persons={visiblePerson} onDelete={this.deleteItem} />
             <AddPerson 
-               onAdd={this.addItem}   
-            />
+               onAdd={this.addItem}>
+                  <h3>Добавить человек</h3>
+               </AddPerson>
          </div>
-     );
+      );
    }
 }
 
